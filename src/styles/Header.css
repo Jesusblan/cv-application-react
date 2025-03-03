@@ -1,0 +1,10 @@
+.header{
+    background-color: rgb(64, 149, 183);
+    height: 100px;
+    color: white;
+    fill: white;
+
+    display: grid;
+    grid-template-columns: 100px minmax(250px, 1fr) 100px;
+    align-items: center;
+}
