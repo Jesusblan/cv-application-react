@@ -1,14 +1,15 @@
 import "../styles/Info.css";
-import infoData from "./data";
 
-function Info() {
+
+
+function Info({props}) {
   return (
     <div className="info">
       <h2>General info</h2>
-      <p>Name: {infoData.name}</p>
-      <p>Last Name: {infoData.lastName}</p>
-      <p>Mail: {infoData.mail}</p>
-      <p>Phone: {infoData.phone}</p>
+      <p>Name: {props.name}</p>
+      <p>Last Name: {props.lastName}</p>
+      <p>Mail: {props.mail}</p>
+      <p>Phone: {props.phone}</p>
     </div>
   );
 }
