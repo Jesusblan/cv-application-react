@@ -1,20 +1,14 @@
 import "../styles/Info.css";
-
-let inputData = {
-  name: "Blas",
-  lastName: "De Lezo",
-  mail: "user@example.com",
-  phone: "+34 633 31 43 89",
-};
+import infoData from "./data";
 
 function Info() {
   return (
     <div className="info">
       <h2>General info</h2>
-      <p>Name: {inputData.name}</p>
-      <p>Last Name: {inputData.lastName}</p>
-      <p>Mail: {inputData.mail}</p>
-      <p>Phone: {inputData.phone}</p>
+      <p>Name: {infoData.name}</p>
+      <p>Last Name: {infoData.lastName}</p>
+      <p>Mail: {infoData.mail}</p>
+      <p>Phone: {infoData.phone}</p>
     </div>
   );
 }
