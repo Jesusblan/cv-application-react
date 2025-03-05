@@ -67,9 +67,9 @@ function Education() {
   return (
     <div className="education">
       <h2>Education</h2>
-      <p>Name: {isData.title}</p>
-      <p>Last Name: {isData.startEnd}</p>
-      <p>Mail: {isData.center}</p>
+      <p>Title: {isData.title}</p>
+      <p>Date: {isData.startEnd}</p>
+      <p>Center: {isData.center}</p>
       <SetPopup />
     </div>
   );
