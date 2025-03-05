@@ -16,3 +16,8 @@
 body {
   margin: 0px;
 }
+.display{
+  display: grid;
+  grid-template-columns: minmax(225px, 1fr) minmax(225px, 1fr);
+  grid-template-rows: repeat(2, 300px);
+}
