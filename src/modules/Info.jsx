@@ -2,7 +2,6 @@ import "../styles/Info.css";
 import React, { useState } from "react";
 
 function Info() {
-
   let infoData = {
     name: "Blas",
     lastName: "De Lezo",
@@ -10,50 +9,45 @@ function Info() {
     phone: "+34 633 31 43 89",
   };
 
+  const [isData, setData] = useState(infoData);
 
-  const [isData, setData] = useState(infoData)
-  
   const handleSubmit = (event) => {
     event.preventDefault();
     infoData.name = event.target.inputName.value;
     infoData.lastName = event.target.inputLastName.value;
     infoData.mail = event.target.inputMail.value;
     infoData.phone = event.target.inputPhone.value;
-    setData(infoData)
+    setData(infoData);
 
-    console.log(isData)
+    console.log(isData);
   };
 
   //pop up form
   function SetPopup() {
-
-
     function InfoForm() {
-
       return (
         <div>
           <form className="infoForm" onSubmit={handleSubmit}>
             <label>Name: </label>
             <input name="inputName" type="text" />
-    
+
             <label>Last Name: </label>
             <input name="inputLastName" type="text" />
-    
+
             <label>Mail: </label>
             <input name="inputMail" type="email" />
-    
+
             <label>Phone: </label>
             <input name="inputPhone" type="tel" />
-    
+
             <button type="submit">Submit</button>
           </form>
         </div>
       );
     }
 
-
     const [isPopup, setPopup] = useState(false);
-  
+
     if (isPopup === false) {
       return (
         <button className="edit" onClick={() => setPopup(true)}>
@@ -64,7 +58,7 @@ function Info() {
       return (
         <div className="input">
           <InfoForm />
-  
+
           <button className="close" onClick={() => setPopup(false)}>
             Close
           </button>
@@ -72,7 +66,6 @@ function Info() {
       );
     }
   }
-  
 
   return (
     <div className="info">
@@ -85,8 +78,5 @@ function Info() {
     </div>
   );
 }
-
-
-
 
 export default Info;

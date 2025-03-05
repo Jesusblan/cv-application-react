@@ -13,6 +13,7 @@
   display: grid;
   grid-template-columns: minmax(200px, 1fr) minmax(500px, 5fr);
 }
-.info{
+.info {
+  width: 50%;
   background-color: rgb(164, 207, 215);
 }
