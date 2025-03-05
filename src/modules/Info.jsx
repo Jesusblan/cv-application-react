@@ -6,7 +6,7 @@ function Info() {
     name: "Blas",
     lastName: "De Lezo",
     mail: "user@example.com",
-    phone: "+34 633 31 43 89",
+    phone: "+34 000 00 00 00",
   };
 
   const [isData, setData] = useState(infoData);
