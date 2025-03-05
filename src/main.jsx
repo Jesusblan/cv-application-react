@@ -10,8 +10,8 @@ createRoot(document.getElementById("root")).render(
     <Header />
     <div className="display">
       <Info />
-      <Education />
       <Experience />
+      <Education />
     </div>
   </>,
 );
